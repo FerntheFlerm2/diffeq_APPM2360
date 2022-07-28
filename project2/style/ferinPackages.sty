@@ -1,0 +1,94 @@
+% Ferin Style, Replace Preamble with this
+
+% PACKAGES ---------------------------------------------------------------------------------------
+\usepackage{setspace} % for double spacing (call \double spacing in document)
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{amsmath} % https://tex.stackexchange.com/questions/368353/using-equation-split-how-can-i-ensure-that-only-the-last-equation-is-numbered
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{gensymb}
+\usepackage{pdfpages}
+\usepackage{float} %for setting figure
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{graphicx}
+\usepackage[siunitx]{circuitikz}
+\usepackage{tikz}
+%\usepackage{tkz-berge}
+\usetikzlibrary{positioning, automata, backgrounds}
+\usepackage[colorinlistoftodos, color=orange!50]{todonotes}
+\usepackage{hyperref}
+\usepackage[numbers, square]{natbib}
+\usepackage{fancybox}
+\usepackage{epsfig}
+\usepackage{soul}
+\usepackage[framemethod=tikz]{mdframed}
+\usepackage[shortlabels]{enumitem}
+\usepackage[version=4]{mhchem}
+\usepackage{multicol}
+\usepackage{forest}
+\usepackage{mathtools}
+\usepackage{comment}
+\usepackage{enumitem}
+\usepackage{tasks}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{color}
+\usepackage[numbers]{natbib}
+\usepackage{subfiles}
+\usepackage{subfig} %for side by side images
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{placeins} %added
+\usepackage{varwidth} %center enumeraate
+\usepackage{listings}
+
+
+% Theorems ---------------------------------------------------------------------------------------
+\newtheorem{prop}{Proposition}[section]
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{cor}{Corollary}[prop]
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\theoremstyle{definition}
+\newtheorem{required}{Problem}
+
+\theoremstyle{definition}
+\newtheorem{ex}{Example}
+
+
+% NEW COMMANDS  -----------------------------------------------------------------------------------------------------
+\newcommand{\matr}[1]{\mathbf{#1}}
+\newcommand{\mvec}[1]{\vec{\mathbf{#1}}}
+
+% custom Variables and Operators ----------------------------------------------------------------------------------------------
+\DeclareMathOperator{\sech}{sech}
+\DeclareMathOperator{\mtrSig}{\matr{\Sigma}} 
+\DeclareMathOperator{\mtrA}{\matr{A}} 
+\DeclareMathOperator{\mtrU}{\matr{U}} 
+\DeclareMathOperator{\mtrV}{\matr{V}} 
+\DeclareMathOperator{\RR}{\mathbb{R}} 
+\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
+
+
+
+
+% Misc ---------------------------------------------------------------------------------------
+
+\setlength{\marginparwidth}{3.4cm}
+%#########################################################
+
+%To use symbols for footnotes
+\renewcommand*{\thefootnote}{\fnsymbol{footnote}}
+%To change footnotes back to numbers uncomment the following line
+%\renewcommand*{\thefootnote}{\arabic{footnote}}
+
+% Enable this command to adjust line spacing for inline math equations.
+% \everymath{\displaystyle}
+
